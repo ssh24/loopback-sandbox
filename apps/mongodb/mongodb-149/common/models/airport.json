@@ -1,0 +1,23 @@
+{
+  "name": "Airport",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "city": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "location": {
+      "type": "geopoint"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
