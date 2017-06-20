@@ -1,0 +1,30 @@
+{
+  "name": "Expense",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "amount": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "dataType": "DECIMAL",
+        "dataPrecision": 10,
+        "dataScale": 2
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

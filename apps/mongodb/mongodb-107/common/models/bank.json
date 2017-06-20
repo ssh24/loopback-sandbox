@@ -1,0 +1,28 @@
+{
+  "name": "Bank",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true,
+      "id": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "opens": {
+      "type": "object"
+    },
+    "closes": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

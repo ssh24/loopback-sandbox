@@ -1,0 +1,28 @@
+{
+  "name": "Employee2",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "generated": false,
+      "id": true
+    },
+    "_rev": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

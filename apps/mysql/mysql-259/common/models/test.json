@@ -1,0 +1,29 @@
+{
+  "name": "Test",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ContentID": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "LangID": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "EntityID": {
+      "type": "number",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "BoomAccount",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "ObjectID",
+      "id": true,
+      "generated": true
+    },
+    "status": {
+      "type": "string",
+      "required": true,
+      "index": true,
+      "default": "Pending",
+      "pattern": "/^(Inactive|Active|Suspended|Pending|Completed)$/"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

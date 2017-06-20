@@ -1,0 +1,36 @@
+{
+  "name": "Employee",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "eId": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    }, 
+    "jobId": {
+      "type": "number",
+      "required": true,
+      "id": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "jobs": {
+      "type": "hasOne",
+      "model": "Job",
+      "foreignKey": "jobId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

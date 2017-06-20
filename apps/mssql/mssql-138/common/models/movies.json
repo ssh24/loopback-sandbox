@@ -1,0 +1,29 @@
+{
+  "name": "Movies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ContentID": {
+      "type": "number",
+      "required": true,
+      "id": 1
+    },
+    "LangID": {
+      "type": "number",
+      "required": true,
+      "id": 2
+    },
+    "EntityID": {
+      "type": "number",
+      "required": true,
+      "id": 3
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

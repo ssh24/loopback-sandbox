@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoDs": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "issue-359",
+    "password": "",
+    "name": "mongoDs",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

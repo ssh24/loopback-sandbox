@@ -1,0 +1,13 @@
+{
+  "db2Ds": {
+    "host": "0.0.0.0",
+    "port": 50000,
+    "database": "Test",
+    "password": "db2inst1-pwd",
+    "name": "db2Ds",
+    "dsn": "",
+    "user": "db2inst1",
+    "schema": "",
+    "connector": "db2"
+  }
+}

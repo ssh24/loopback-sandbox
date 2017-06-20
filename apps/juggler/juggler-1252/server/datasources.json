@@ -1,0 +1,9 @@
+{
+  "my-db": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "mydb",
+    "name": "my-db",
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,21 @@
+Sakib UserID: "58f64c81dd9cfc741ce55d52"
+John Chao UserID: "58f64caadd9cfc741ce55d53"
+
+[
+  {
+    "title": "job1",
+    "id": "58f64bccdd9cfc741ce55d50"
+  },
+  {
+    "title": "job2",
+    "id": "58f64bd4dd9cfc741ce55d51"
+  }
+]
+
+{"where":{"staffId":{"neq":"58f64caadd9cfc741ce55d53"}}}
+{"fields":{"staffId":true}}
+
+{"where":{"and":[{"fields":{"jobId":true}},{"staffId":{"neq":"58f64caadd9cfc741ce55d53"}}]}}
+    
+    
+    

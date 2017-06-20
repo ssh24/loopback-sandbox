@@ -1,0 +1,28 @@
+{
+  "name": "Employee",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "eId": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "dataType": "bigint"
+    },
+    "role": {
+      "type": "string",
+      "default": "Software Developer"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

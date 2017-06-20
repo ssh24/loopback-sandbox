@@ -1,0 +1,47 @@
+{
+  "name": "Message",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "indexes": {
+      "from_index": {
+        "keys": {
+          "from": 1
+        }
+      },
+      "conversation_index": {
+        "keys": {
+          "conversation": 1
+        }
+      }
+    }
+  },
+  "properties": {
+    "conversation": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "from": {
+      "type": "number",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "date"
+    },
+    "deleted": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

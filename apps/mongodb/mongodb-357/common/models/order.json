@@ -1,0 +1,27 @@
+{
+  "name": "Order",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "finished": {
+      "type": "boolean"
+    },
+    "stagesDone": {
+      "type": [
+        "object"
+      ]
+    },
+    "stagesToDo": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

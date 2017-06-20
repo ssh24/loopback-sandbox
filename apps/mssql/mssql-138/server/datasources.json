@@ -1,0 +1,12 @@
+{
+  "mssqlDs": {
+    "host": "0.0.0.0",
+    "port": 1433,
+    "url": "",
+    "database": "test-db",
+    "password": "Str0ng100p",
+    "name": "mssqlDs",
+    "user": "sa",
+    "connector": "mssql"
+  }
+}

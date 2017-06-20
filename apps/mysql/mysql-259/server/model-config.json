@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Message": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Test": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Account": {
+    "dataSource": "mysqlDs",
+    "public": true
+  }
+}

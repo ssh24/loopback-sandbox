@@ -1,0 +1,25 @@
+{
+  "name": "orders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "createdat": {
+      "type": "date",
+      "mysql":
+      {
+        "columnName":"createdAt",
+        "dataType":"datetime"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

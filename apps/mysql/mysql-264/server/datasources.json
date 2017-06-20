@@ -1,0 +1,22 @@
+{
+  "mysqlDS1": {
+    "host": "0.0.0.0",
+    "port": 3307,
+    "url": "",
+    "database": "sample",
+    "password": "root",
+    "name": "mysqlDS1",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "mysqlDS2": {
+    "host": "0.0.0.0",
+    "port": 3308,
+    "url": "",
+    "database": "sample",
+    "password": "root",
+    "name": "mysqlDS2",
+    "user": "root",
+    "connector": "mysql"
+  }
+}

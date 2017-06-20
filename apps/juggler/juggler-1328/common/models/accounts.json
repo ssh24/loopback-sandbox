@@ -1,0 +1,26 @@
+{
+  "name": "Accounts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Type": {
+      "type": "string"
+    },
+    "MinBalance": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "Users",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Job",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "jobId": {
+      "type": "number",
+      "required": true,
+      "id": true
+    },
+    "jobName": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+  },
+  "acls": [],
+  "methods": {}
+}

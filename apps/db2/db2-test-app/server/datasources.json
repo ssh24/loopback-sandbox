@@ -1,0 +1,13 @@
+{
+  "db2Ds": {
+    "host": "dianalau03win7.canlab.ibm.com",
+    "port": 50000,
+    "database": "PMR_DB",
+    "password": "toyota789!",
+    "name": "db2Ds",
+    "dsn": "",
+    "user": "Administrator",
+    "schema": "Administrator",
+    "connector": "db2"
+  }
+}

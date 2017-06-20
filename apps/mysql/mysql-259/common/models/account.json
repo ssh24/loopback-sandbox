@@ -1,0 +1,25 @@
+{
+  "name": "Account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Type": {
+      "type": "string"
+    },
+    "Amount": {
+      "type": "number",
+      "mysql": {
+        "dataType": "decimal",
+        "dataPrecision": 20,
+        "dataScale": 2
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

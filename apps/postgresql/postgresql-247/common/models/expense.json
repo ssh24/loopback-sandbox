@@ -1,0 +1,38 @@
+{
+  "name": "Expense",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": "validate",
+  "trackChanges": true,
+  "persistUndefinedAsNull": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+     "id": {
+      "id": true,
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Amount": {
+      "type": "number"
+    },
+    "Stamp": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "stamp",
+        "dataType": "timestamp with time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
