@@ -1,48 +1,51 @@
 'use strict';
 var util = require('util');
+var _ = require('lodash');
 
 module.exports = function(app) {
-  var db = app.dataSources.mongoDs;
-  var Order = app.models.Order;
+  var db = app.datasources.mongoDs;
+  var Business = app.models.Business;
 
   db.automigrate(function(err) {
     if (err) throw err;
+    console.log('\nAutomigrate completed');
 
-    Order.create({'finished': false,
-      'stagesDone': [],
-      'stagesToDo': [
-        {
-          'phaseId': '1',
-          'name': 'Stage 1',
-          'parentPhases': [],
-          'order': 1,
+    Business.create([{
+      id: 1,
+      info: {
+        name: 'Foo Business',
+        moto: 'Some foo',
+        owners: ['Foo'],
+        location: {
+          lat: 23.456,
+          lng: -23.456,
         },
-        {
-          'phaseId': '2',
-          'name': 'Stage 2',
-          'parentPhases': [],
-          'order': 1,
+      },
+    }, {
+      id: 2,
+      info: {
+        name: 'Bar Business',
+        moto: 'Some Bar',
+        owners: ['Bar', 'Bar1'],
+        location: {
+          lat: 13.456,
+          lng: -53.456,
         },
-        {
-          'phaseId': '3',
-          'name': 'Stage 3',
-          'parentPhases': [
-            '5682f27471f5739818e8fabf',
-          ],
-          'order': 2,
-        },
-        {
-          'phaseId': '4',
-          'name': 'Stage 4',
-          'parentPhases': [
-            '5682f20471f5739818e8fabe',
-            '5682f27471f5739818e8fabf',
-          ],
-          'order': 2,
-        },
-      ]}, function(err, result) {
+      },
+    }], function(err, result) {
       if (err) throw err;
-      console.log('\nCreate instance: ' + util.inspect(result, 4));
+      console.log('\nCreated instance: %j' + util.inspect(result, {depth: 4}));
+
+    //   Business.find({where: {'info.location.lat': {gte: 15.500}}},
+    //   function(err, result) {
+    //     if (err) throw err;
+    //     console.log('\nFound instance with embedded filter: ' + util.inspect(result, {depth: 4}));
+    //   });
+      Business.find({where: {'owners[0]': 'Bar'}},
+      function(err, result) {
+        if (err) throw err;
+        console.log('\nFound instance with embedded filter: ' + util.inspect(result, {depth: 4}));
+      });
     });
   });
 };
