@@ -1,0 +1,1 @@
+create table book(bId integer not null, name text, isbn text, authorId integer not null, PRIMARY KEY (bId, authorId), CONSTRAINT book_author_author_id_fkey FOREIGN KEY (authorId) REFERENCES author (aId));

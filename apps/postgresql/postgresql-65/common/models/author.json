@@ -1,0 +1,22 @@
+{
+  "name": "Author",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "aId": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

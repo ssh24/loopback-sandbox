@@ -1,0 +1,36 @@
+{
+  "name": "Book",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "bId": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "isbn": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Author",
+      "foreignKey": "authorId"
+    }
+  },
+  "acls": [],
+  "methods": {},
+  "foreignKeys": {
+    "authorId": {
+      "name": "authorId",
+      "foreignKey": "authorId",
+      "entityKey": "aId",
+      "entity": "Author"
+    }
+  }
+}
