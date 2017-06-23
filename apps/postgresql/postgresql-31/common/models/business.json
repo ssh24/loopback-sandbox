@@ -1,0 +1,28 @@
+{
+  "name": "Business",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object",
+      "postgresql": {
+        "dataType": "json"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
