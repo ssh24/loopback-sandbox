@@ -9,7 +9,8 @@
     "info": {
       "type": "object",
       "postgresql": {
-        "dataType": "json"
+        "dataType": "json",
+        "columnName": "Info"
       }
     }
   },
