@@ -1,0 +1,12 @@
+{
+  "mssqlDs": {
+    "host": "localhost",
+    "port": 1433,
+    "url": "",
+    "database": "master",
+    "password": "M55sqlT35t",
+    "name": "mssqlDs",
+    "user": "sa",
+    "connector": "mssql"
+  }
+}
