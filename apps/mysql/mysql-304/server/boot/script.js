@@ -12,21 +12,31 @@ module.exports = function(app) {
 
         Employee.create([{
             name: 'Foo',
-            age: 12
+            age: 12,
+            reportsTo: ['Bob', 'Sam']
         }, {
             name: 'Bar',
-            age: 24
+            age: 24,
+            reportsTo: ['Sam']
         }, {
             name: 'Baz',
-            age: 22
+            age: 22,
+            reportsTo: ['John', 'Bob']
         }], function(err, result) {
             if (err) throw err;
             console.log('\nCreated instance: ' + util.inspect(result));
+
+            // Employee.find({where: {reportsTo: {inq: ['["Sam"]']}}}, function(err, result) {
+            //     if (err) throw err;
+            //     console.log('\nFound instance with inq: ' + util.inspect(result));
+            // });
 
             Employee.find({where: {name: {inq: ['Foo', 'Bar']}}}, function(err, result) {
                 if (err) throw err;
                 console.log('\nFound instance with inq: ' + util.inspect(result));
             });
+
+           // SELECT * FROM Employee WHERE JSON_CONTAINS(reportsTo, '["Sam"]');
         })
     });
 };

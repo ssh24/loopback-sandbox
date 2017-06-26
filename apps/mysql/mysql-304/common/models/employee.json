@@ -11,6 +11,11 @@
     },
     "age": {
       "type": "number"
+    }, 
+    "reportsTo": {
+      "type": [
+        "string"
+      ]
     }
   },
   "validations": [],
