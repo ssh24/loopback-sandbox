@@ -16,5 +16,9 @@
   "Car": {
     "dataSource": "mongoDs",
     "public": true
+  },
+  "Emploee": {
+    "dataSource": "mongoDs",
+    "public": true
   }
 }
