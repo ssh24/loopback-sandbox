@@ -1,0 +1,23 @@
+{
+  "name": "Item",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number",
+      "postgresql": {
+        "dataType": "decimal"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
