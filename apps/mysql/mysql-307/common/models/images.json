@@ -1,0 +1,26 @@
+{
+  "name": "Images",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "img_url": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string",
+      "mysql": {
+        "dataType": "LONGTEXT"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
