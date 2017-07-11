@@ -1,0 +1,15 @@
+{
+  "mongoDs": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "testdb",
+    "password": "",
+    "name": "mongoDs",
+    "user": "",
+    "connector": "mongodb",
+    "autoReconnect": true,
+    "reconnectTries": 30,
+    "reconnectInterval": 1000
+  }
+}
