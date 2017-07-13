@@ -1,0 +1,22 @@
+{
+  "postgresqlDs": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "testdb",
+    "password": "pass",
+    "name": "postgresqlDs",
+    "user": "root",
+    "connector": "postgresql"
+  },
+  "newDs": {
+    "host": "",
+    "port": 5432,
+    "url": "postgres://root:pass@localhost/testdb",
+    "database": "",
+    "password": "",
+    "name": "newDs",
+    "user": "",
+    "connector": "postgresql"
+  }
+}
