@@ -1,0 +1,38 @@
+{
+  "name": "Order",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "indexes": {
+      "price_index": {
+        "keys": {
+          "price": -1
+        }
+      }
+    }
+  },
+  "properties": {
+    "item": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number",
+      "postgresql": {
+        "dataType": "DECIMAL",
+        "dataPrecision": 10,
+        "dataScale": 2
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customer": {
+      "type": "hasOne",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
