@@ -1,0 +1,13 @@
+{
+  "db2ds": {
+    "host": "loopback-connector-ci2.rtp.raleigh.ibm.com",
+    "port": 50000,
+    "database": "BLUDB",
+    "password": "<pass>",
+    "name": "db2ds",
+    "dsn": "",
+    "user": "<user>",
+    "schema": "BLUADMIN",
+    "connector": "db2"
+  }
+}
