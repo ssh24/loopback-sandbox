@@ -1,0 +1,23 @@
+{
+  "name": "Cart",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "item": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number",
+      "postgresql": {
+        "dataType": "DOUBLE PRECISION"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
