@@ -1,0 +1,12 @@
+{
+  "couchDs": {
+    "host": "127.0.0.1",
+    "port": "32778",
+    "url": "http://admin:pass@127.0.0.1:32778",
+    "database": "test-db",
+    "password": "pass",
+    "name": "couchDs",
+    "connector": "couchdb2",
+    "user": "admin"
+  }
+}
