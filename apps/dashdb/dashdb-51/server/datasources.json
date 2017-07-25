@@ -1,0 +1,13 @@
+{
+  "dashdbDs": {
+    "host": "loopback-connector-ci.rtp.raleigh.ibm.com",
+    "port": 50000,
+    "database": "BLUDB",
+    "password": "<password>",
+    "name": "dashdbDs",
+    "schema": "NEWSCHEM",
+    "dsn": "",
+    "user": "<user>",
+    "connector": "dashdb"
+  }
+}
