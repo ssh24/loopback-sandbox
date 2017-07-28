@@ -1,0 +1,29 @@
+{
+  "name": "City",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "lng": {
+      "type": "number",
+      "postgresql": {
+        "dataType": "double precision"
+      }
+    }, 
+    "lat": {
+      "type": "number",
+      "postgresql": {
+        "dataType": "double precision"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
