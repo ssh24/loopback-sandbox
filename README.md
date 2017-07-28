@@ -8,3 +8,8 @@ To spawn a child application, make sure a template application exists for that d
 ```
 sh spawn-app.sh <database-repo-name> <issue-number>
 ```
+
+To generate application statistics:
+```
+sh generate-data.sh
+```
