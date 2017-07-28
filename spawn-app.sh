@@ -18,3 +18,6 @@ else
 fi
 
 echo "Copied app over to: $APPS/$REPO/$REPO-$ISSUE"
+
+echo "Installing dependencies:"
+cd $APPS/$REPO/$REPO-$ISSUE && sh install.sh
