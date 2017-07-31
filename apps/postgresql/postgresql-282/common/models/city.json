@@ -12,7 +12,8 @@
     "lng": {
       "type": "number",
       "postgresql": {
-        "dataType": "double precision"
+        "dataType": "float",
+        "dataPrecision": 53
       }
     }, 
     "lat": {
