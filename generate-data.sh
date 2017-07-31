@@ -12,43 +12,44 @@ POSTGRESQL="postgresql"
 MONGODB="mongodb"
 JUGGLER="juggler"
 
+echo "" >> README.md
 
-echo "# App Statistics" > STATS.md
+echo "# App Statistics" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
 
-echo "Total number of apps: `ls $APPS/* | wc -l`" >> STATS.md
+echo "Total number of apps: `ls $APPS/* | wc -l`" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
 
-echo "Cloudant: `ls $APPS/$CLOUDANT | wc -l`" >> STATS.md
+echo "Cloudant: `ls $APPS/$CLOUDANT | wc -l`" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
 
-echo "DashDB: `ls $APPS/$DASHDB | wc -l`" >> STATS.md
+echo "DashDB: `ls $APPS/$DASHDB | wc -l`" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
 
-echo "DB2: `ls $APPS/$DB2 | wc -l`" >> STATS.md
+echo "DB2: `ls $APPS/$DB2 | wc -l`" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
 
-echo "MSSQL: `ls $APPS/$MSSQL | wc -l`" >> STATS.md
+echo "MSSQL: `ls $APPS/$MSSQL | wc -l`" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
 
-echo "MySQL: `ls $APPS/$MYSQL | wc -l`" >> STATS.md
+echo "MySQL: `ls $APPS/$MYSQL | wc -l`" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
 
-echo "Postgresql: `ls $APPS/$POSTGRESQL | wc -l`" >> STATS.md
+echo "Postgresql: `ls $APPS/$POSTGRESQL | wc -l`" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
 
-echo "MongoDB: `ls $APPS/$MONGODB | wc -l`" >> STATS.md
+echo "MongoDB: `ls $APPS/$MONGODB | wc -l`" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
 
-echo "Juggler: `ls $APPS/$JUGGLER | wc -l`" >> STATS.md
+echo "Juggler: `ls $APPS/$JUGGLER | wc -l`" >> README.md
 
-echo "" >> STATS.md
+echo "" >> README.md
