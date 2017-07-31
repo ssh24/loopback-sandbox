@@ -1,0 +1,18 @@
+{
+  "memoryDs": {
+    "name": "memoryDs",
+    "localStorage": "",
+    "file": "",
+    "connector": "memory"
+  },
+  "mysqlDs": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "testdb",
+    "password": "pass",
+    "name": "mysqlDs",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
