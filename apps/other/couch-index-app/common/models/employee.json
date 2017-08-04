@@ -1,0 +1,33 @@
+{
+  "name": "Employee",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "indexes": {
+      "name_joined_index": {
+        "keys": {
+          "name": 1,
+          "joined": 1
+        }
+      }
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "index": true
+    },
+    "age": {
+      "type": "number",
+      "index": true
+    },
+    "joined": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
