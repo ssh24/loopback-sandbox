@@ -13,14 +13,13 @@ module.exports = function(app) {
         console.log('\nAutomigrate completed');
 
         // set validation
-        // Employee.validatesLengthOf('name', {min: 5});
-        Employee.validatesPresenceOf('age');
+        Employee.validatesLengthOf('name', {min: 5});
 
         Employee.create([{
-            name: 'Bar',
+            name: 'Abcdef',
             age: 1
         }, {
-            name: 'Sakib',
+            name: 'Ghijkl',
             age: 12
         }], function(err, result) {
             if (err) throw err;
@@ -28,7 +27,7 @@ module.exports = function(app) {
 
             id = result[0].id;
 
-            Employee.updateAll({id: id}, {name: 'Foo', age: 5}, function(err, result) {
+            Employee.updateAll({id: id}, {name: 'Foo'}, function(err, result) {
                 if (err) throw err;
                 console.log('\nUpdated instance: ' + util.inspect(result));
 
