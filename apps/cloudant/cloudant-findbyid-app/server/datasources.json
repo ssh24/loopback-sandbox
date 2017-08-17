@@ -1,0 +1,11 @@
+{
+  "cloudantDs": {
+    "url": "http://admin:pass@localhost:8080/testdb",
+    "database": "testdb",
+    "username": "admin",
+    "password": "pass",
+    "name": "cloudantDs",
+    "modelIndex": "",
+    "connector": "cloudant"
+  }
+}
