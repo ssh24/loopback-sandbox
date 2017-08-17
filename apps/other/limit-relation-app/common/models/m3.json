@@ -1,0 +1,9 @@
+{
+  "name": "M3",
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "base": "PersistedModel"
+}

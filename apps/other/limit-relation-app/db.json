@@ -1,0 +1,64 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "M1": 4,
+    "M2": 10,
+    "M3": 28
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "M1": {
+      "1": "{\"name\":\"Model - 1 - index 1\",\"checkDefault\":\"Scope Condition String\",\"id\":1}",
+      "2": "{\"name\":\"Model - 1 - index 2\",\"checkDefault\":\"Scope Condition String\",\"id\":2}",
+      "3": "{\"name\":\"Model - 1 - index 3\",\"checkDefault\":\"Scope Condition String\",\"id\":3}"
+    },
+    "M2": {
+      "1": "{\"name\":\"Model - 2 - index 1\",\"m1Id\":1,\"id\":1}",
+      "2": "{\"name\":\"Model - 2 - index 2\",\"m1Id\":1,\"id\":2}",
+      "3": "{\"name\":\"Model - 2 - index 3\",\"m1Id\":1,\"id\":3}",
+      "4": "{\"name\":\"Model - 2 - index 4\",\"m1Id\":2,\"id\":4}",
+      "5": "{\"name\":\"Model - 2 - index 5\",\"m1Id\":2,\"id\":5}",
+      "6": "{\"name\":\"Model - 2 - index 6\",\"m1Id\":2,\"id\":6}",
+      "7": "{\"name\":\"Model - 2 - index 7\",\"m1Id\":3,\"id\":7}",
+      "8": "{\"name\":\"Model - 2 - index 8\",\"m1Id\":3,\"id\":8}",
+      "9": "{\"name\":\"Model - 2 - index 9\",\"m1Id\":3,\"id\":9}"
+    },
+    "M3": {
+      "1": "{\"name\":\"Model - 3 - index 1\",\"m2Id\":1,\"id\":1}",
+      "2": "{\"name\":\"Model - 3 - index 2\",\"m2Id\":1,\"id\":2}",
+      "3": "{\"name\":\"Model - 3 - index 3\",\"m2Id\":1,\"id\":3}",
+      "4": "{\"name\":\"Model - 3 - index 4\",\"m2Id\":2,\"id\":4}",
+      "5": "{\"name\":\"Model - 3 - index 5\",\"m2Id\":2,\"id\":5}",
+      "6": "{\"name\":\"Model - 3 - index 6\",\"m2Id\":2,\"id\":6}",
+      "7": "{\"name\":\"Model - 3 - index 7\",\"m2Id\":3,\"id\":7}",
+      "8": "{\"name\":\"Model - 3 - index 8\",\"m2Id\":3,\"id\":8}",
+      "9": "{\"name\":\"Model - 3 - index 9\",\"m2Id\":3,\"id\":9}",
+      "10": "{\"name\":\"Model - 3 - index 4\",\"m2Id\":4,\"id\":10}",
+      "11": "{\"name\":\"Model - 3 - index 5\",\"m2Id\":4,\"id\":11}",
+      "12": "{\"name\":\"Model - 3 - index 6\",\"m2Id\":4,\"id\":12}",
+      "13": "{\"name\":\"Model - 3 - index 7\",\"m2Id\":5,\"id\":13}",
+      "14": "{\"name\":\"Model - 3 - index 8\",\"m2Id\":5,\"id\":14}",
+      "15": "{\"name\":\"Model - 3 - index 9\",\"m2Id\":5,\"id\":15}",
+      "16": "{\"name\":\"Model - 3 - index 10\",\"m2Id\":6,\"id\":16}",
+      "17": "{\"name\":\"Model - 3 - index 11\",\"m2Id\":6,\"id\":17}",
+      "18": "{\"name\":\"Model - 3 - index 12\",\"m2Id\":6,\"id\":18}",
+      "19": "{\"name\":\"Model - 3 - index 7\",\"m2Id\":7,\"id\":19}",
+      "20": "{\"name\":\"Model - 3 - index 8\",\"m2Id\":7,\"id\":20}",
+      "21": "{\"name\":\"Model - 3 - index 9\",\"m2Id\":7,\"id\":21}",
+      "22": "{\"name\":\"Model - 3 - index 10\",\"m2Id\":8,\"id\":22}",
+      "23": "{\"name\":\"Model - 3 - index 11\",\"m2Id\":8,\"id\":23}",
+      "24": "{\"name\":\"Model - 3 - index 12\",\"m2Id\":8,\"id\":24}",
+      "25": "{\"name\":\"Model - 3 - index 13\",\"m2Id\":9,\"id\":25}",
+      "26": "{\"name\":\"Model - 3 - index 14\",\"m2Id\":9,\"id\":26}",
+      "27": "{\"name\":\"Model - 3 - index 15\",\"m2Id\":9,\"id\":27}"
+    }
+  }
+}

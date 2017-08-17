@@ -1,0 +1,15 @@
+{
+  "name": "M2",
+  "base": "PersistedModel",
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "relations": {
+    "m3s": {
+      "type": "hasMany",
+      "model": "M3"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "M1",
+  "base": "PersistedModel",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "checkDefault": {
+      "type": "string",
+      "default": "Default String"
+    }
+  },
+  "relations": {
+    "m2s": {
+      "type": "hasMany",
+      "model": "M2"
+    }
+  },
+  "scope": {
+      "where": {
+        "checkDefault": "Scope Condition String"
+      }
+    }
+
+}
