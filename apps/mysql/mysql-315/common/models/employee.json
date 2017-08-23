@@ -8,11 +8,12 @@
   "properties": {
     "name": {
       "type": "string"
-    },
+    }, 
     "date": {
       "type": "date",
-      "required": true,
-      "defaultFn": "now"
+      "mysql": {
+        "default": "now"
+      }
     }
   },
   "validations": [],
