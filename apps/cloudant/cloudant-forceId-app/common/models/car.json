@@ -1,0 +1,26 @@
+{
+  "name": "Car",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
