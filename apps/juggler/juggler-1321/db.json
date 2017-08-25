@@ -1,0 +1,11 @@
+{
+  "ids": {
+    "Employee": 3
+  },
+  "models": {
+    "Employee": {
+      "1": "{\"name\":\"Foo\",\"age\":1,\"id\":1}",
+      "2": "{\"name\":\"Bar\",\"age\":2,\"id\":2}"
+    }
+  }
+}
